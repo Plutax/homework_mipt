@@ -1,0 +1,12 @@
+
+class Vehicle:  #родительский -- общие сво  ства транспорта
+    def __init__(self, brand):  #конструктор
+        self.brand = brand #конкретная марка транспорта
+
+    def drive(self):  #метод родительского
+        print(f'{self.brand} едет')
+
+
+class Car(Vehicle):  #дочерний, наследует Vehicle
+    def open_door(self):
+        print('открыта дверь')
